@@ -49,14 +49,14 @@ public class CameraColorController : MonoBehaviour
 
    private void CheckColorIndexValue()
    {
-      if (colorIndex >= colors.Length)
+      if (colorIndex >= colors.Length)//colorIndex büyük eşit ise colors dizimizin uzunluğuna;
       {
-         colorIndex = 0;
+         colorIndex = 0;//colorIndex'i 0'a ata
       }
    }
 
    private void OnDestroy()//Her oyun kapandığında varsayılan değerimizi tekrar ilk Color'ımıza çekiyoruz
    {
-      mainCamera.backgroundColor = colors[1];
+      mainCamera.backgroundColor = colors[1];//bgColor'ı colors dizimizin 1 numaralı index'ine atıyoruz.
    }
 }
