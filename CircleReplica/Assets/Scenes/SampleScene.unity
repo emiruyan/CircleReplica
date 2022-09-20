@@ -366,7 +366,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -120.17}
+  m_AnchoredPosition: {x: 27.3, y: -300}
   m_SizeDelta: {x: 1080, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1103537455
@@ -391,15 +391,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279769254
-  m_fontColor: {r: 0.6509434, g: 0.094571, b: 0.094571, a: 1}
+    rgba: 1330860896
+  m_fontColor: {r: 0.3773585, g: 0.3253827, b: 0.3253827, a: 0.30980393}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -717,6 +717,7 @@ GameObject:
   - component: {fileID: 2045102993}
   - component: {fileID: 2045102992}
   - component: {fileID: 2045102991}
+  - component: {fileID: 2045102994}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -801,6 +802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circleInputController: {fileID: 2045102992}
+  circleScoreController: {fileID: 2045102994}
 --- !u!61 &2045102990
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -854,6 +856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad82036d6c4871445bafa315275a2f9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  circleDataTransmiter: {fileID: 2045102989}
   isTouch: 0
 --- !u!114 &2045102993
 MonoBehaviour:
@@ -867,3 +870,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e1ad221594ebea4cb28b90ee8cb8332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2045102994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045102985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a23d2a7cd0bba40ac172b905e9cef9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 1103537455}
